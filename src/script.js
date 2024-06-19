@@ -42,7 +42,7 @@ function typeEffect() {
     }
   }
 }
-// typeeffect
+
 // Start typing effect
 
 typeEffect();
