@@ -1,5 +1,10 @@
 // typeEffect();
-const textLines = ["Hello Visitors...", "Website is under construction"];
+const textLines = [
+  "Hello Visitors...",
+  "Website is under construction",
+  "DO NOT TOUCH IT, IT IS RACING TO BUILD THE WEBSITE",
+  "Stay Tuned !",
+];
 const speed = 100; // typing speed in milliseconds
 const typingElement = document.getElementById("typing");
 let lineIndex = 0;
