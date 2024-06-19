@@ -2,7 +2,8 @@
 const textLines = [
   "Hello Visitors...",
   "Website is under construction",
-  "DO NOT TOUCH IT, IT IS RACING TO BUILD THE WEBSITE",
+  "DO NOT TOUCH IT",
+  "'It is racing to build the website'",
   "Stay Tuned !",
 ];
 const speed = 100; // typing speed in milliseconds
@@ -31,6 +32,18 @@ function typeEffect() {
         typingElement.innerHTML +=
           '<span style="color: red;">construction</span>';
         charIndex += 12; // Move charIndex to the end of "construction" word
+      } else if (
+        currentChar === "S" &&
+        textLines[lineIndex].substring(charIndex, charIndex + 4) === "Stay"
+      ) {
+        typingElement.innerHTML += '<span style="color: Orange;">Stay</span>';
+        charIndex += 3; // Move charIndex to the end of "construction" word
+      } else if (
+        currentChar === "T" &&
+        textLines[lineIndex].substring(charIndex, charIndex + 7) === "Tuned !"
+      ) {
+        typingElement.innerHTML += '<span style="color: White;">Tuned !</span>';
+        charIndex += 6; // Move charIndex to the end of "construction" word
       } else {
         typingElement.innerHTML += currentChar;
       }
